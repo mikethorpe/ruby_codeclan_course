@@ -1,0 +1,11 @@
+<h1>Student</h1>
+
+<ul>
+    <li>Name: <%= @student.format_name() %></li>
+    <li>Age: <%=@student.age()%></li>
+    <li>House: <%=@student.house().name%></li>
+</ul>
+
+<form class="" action="/students/<%=@student.id%>/delete" method="post">
+    <input type="submit" value="Delete Student">
+</form>
